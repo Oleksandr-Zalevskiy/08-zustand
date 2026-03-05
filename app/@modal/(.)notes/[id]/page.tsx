@@ -6,7 +6,7 @@ import {
 import type { Metadata } from "next";
 
 import { fetchNoteById } from "@/lib/api";
-import NotePreviewClient from "@/components/NotePreview/NotePreview.client";
+import NotePreviewClient from "@/components/NotePreview/NotePreview";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 const OG_IMAGE = "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg";
