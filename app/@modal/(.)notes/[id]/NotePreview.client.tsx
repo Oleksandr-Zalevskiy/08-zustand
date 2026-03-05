@@ -4,13 +4,13 @@ import {
   QueryClient,
 } from "@tanstack/react-query";
 import { fetchNoteById } from "@/lib/api";
-import NotePreviewClient from "@/components/NotePreview/NotePreview.client";
+import NotePreviewClient from "@/components/NotePreview/NotePreview";
 
 interface Props {
   params: Promise<{ id: string }>;
 }
 
-export default async function ModalNotePage({ params }: Props) {
+export default async function NotePreviewRoute({ params }: Props) {
   const { id } = await params;
 
   const queryClient = new QueryClient();
